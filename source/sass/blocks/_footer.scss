@@ -1,0 +1,66 @@
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+  padding-bottom: 100px;
+
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    width: 570px;
+  }
+
+  &__logo {
+
+  }
+}
+
+.product__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+
+}
+
+.engage__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+
+}
+
+.earn-money__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+
+
+
+}
+
+.list {
+
+  &__item {
+
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #0B132A;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+    text-decoration: none;
+  }
+}
