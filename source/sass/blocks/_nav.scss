@@ -1,0 +1,21 @@
+.nav {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 451px;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    color: #4F5665;
+    text-decoration: none;
+  }
+}

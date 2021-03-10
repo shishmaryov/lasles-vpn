@@ -1,0 +1,20 @@
+.login {
+
+  &__in {
+    margin-right: 30px;
+    font-weight: 500;
+    color: #0B132A;
+    text-decoration: none;
+  }
+
+  &__up {
+    padding: 13px 45px;
+    font-weight: 500;
+    color: #F53855;
+    text-decoration: none;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    background-color: #fff;
+    min-width: calc(59px + 45px * 2);
+  }
+}

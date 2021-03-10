@@ -1,0 +1,66 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+
+  &__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    vertical-align: top;
+  }
+}
+
+.slide {
+  width: 400px;
+  height: 230px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+
+  &__opinion {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+}
+
+.author {
+  display: flex;
+  vertical-align: middle;
+
+
+  &__text-block {
+    margin-left: 20px;
+  }
+  &__name {
+    max-width: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: #0B132A;
+  }
+
+  &__city {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #4F5665;
+  }
+}
+
+.ball {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-right: 26px;
+
+  &::after {
+    content: url("../img/icon-star.svg");
+    position: absolute;
+    top: 3px;
+    right: 0;
+
+  }
+}

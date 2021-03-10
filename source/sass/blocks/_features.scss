@@ -1,0 +1,50 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 95px;
+
+  &__img {
+
+  }
+
+  &__text-block {
+    max-width: 450px;
+    margin-top: 55px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #0B132A;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #4F5665;
+  }
+
+  &__list {
+    padding-left: 32px;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #4F5665;
+
+    &::before {
+      content: url("../img/icon-list-check.svg");
+      position: absolute;
+      top: 0;
+      left: -32px;
+      width: 24px;
+      height: 24px;
+      background-color: #fff;
+      border-radius: 100%;
+    }
+  }
+}

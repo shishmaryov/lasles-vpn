@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  vertical-align: middle;
+
+  &__logo {
+
+  }
+
+  &__nav {
+    @media (max-width: 1140px) {
+      display: none;
+    }
+  }
+}
