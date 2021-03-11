@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /* ==========================================================================
    Normalize.scss settings
@@ -673,34 +674,22 @@ th {
   margin-top: 0;
   margin-bottom: 60px; }
 
-.slider {
+.slider__top-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .slider__top-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-    vertical-align: top; }
+          justify-content: space-between;
+  margin-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  vertical-align: top; }
 
-.slide {
-  width: 400px;
-  height: 230px;
-  border: 2px solid #DDDDDD;
-  border-radius: 10px; }
-  .slide__opinion {
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px; }
+.slide__opinion {
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px; }
 
 .author {
   display: -webkit-box;
@@ -733,6 +722,118 @@ th {
     top: 3px;
     right: 0; }
 
+/* Слайдер */
+.slick-slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 0;
+  padding: 0 10px; }
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  min-width: 0;
+  overflow: hidden; }
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0;
+  min-height: 0; }
+
+/* Слайд */
+.slick-slide {
+  height: 230px;
+  margin-bottom: 150px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  margin: 0 10px 150px 10px; }
+
+/* Слайд активный (показывается) */
+.slick-active {
+  border: 1px solid #F53855; }
+
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  top: 270px;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  font-size: 0px;
+  line-height: 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100px; }
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  right: 100px;
+  background-color: #fff;
+  background-image: url("../../img/arrow--prev.svg");
+  border: 1px solid #F53855; }
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 20px;
+  background-color: #F53855;
+  background-image: url("../../img/arrow--next.svg");
+  border: none; }
+
+/* Стрелка не активная */
+/* Точки (булиты) */
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 135px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute;
+  top: 290px;
+  left: 20px; }
+
+.slick-dots li {
+  list-style: none;
+  border: none; }
+
+/* Активная точка */
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  width: 15px;
+  height: 15px;
+  list-style: none;
+  background-color: #DDE0E4;
+  border-radius: 100px;
+  border: none; }
+
+.slick-dots li.slick-active button {
+  width: 45px;
+  background-color: #F53855;
+  border-radius: 200px; }
+  .slick-dots li.slick-active button :active {
+    border: none; }
+
 .footer {
   position: relative;
   display: -webkit-box;
@@ -741,7 +842,7 @@ th {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 150px;
+  margin-top: 365px;
   padding-bottom: 100px; }
   .footer__lists {
     display: -webkit-box;
@@ -784,14 +885,47 @@ th {
 
 .subscribe {
   position: absolute;
-  top: -150px;
+  top: -300px;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 1140px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 50px rgba(13, 16, 37, 0.06);
+          box-shadow: 0 0 50px rgba(13, 16, 37, 0.06); }
+  .subscribe__text-block {
+    margin-top: 58.5px;
+    margin-left: 70px; }
+  .subscribe__title {
+    max-width: 370px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 45px; }
+  .subscribe__text {
+    margin: 0;
+    padding-bottom: 58.5px; }
+  .subscribe__button {
+    min-width: calc(119px + 65px*2);
+    max-height: 60px;
+    margin-top: 105px;
+    margin-right: 70px;
+    padding: 18px 65px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #f53855;
+    border: none;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 15px rgba(245, 56, 56, 0.35);
+            box-shadow: 0 5px 15px rgba(245, 56, 56, 0.35); }
 
 .info {
   max-width: 340px; }
