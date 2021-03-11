@@ -1,21 +1,47 @@
 .subscribe {
   position: absolute;
-  top: -150px;
+  top: -300px;
   left: 0;
   display: flex;
+  justify-content: space-between;
   width: 1140px;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(13, 16, 37, 0.06px);
+
+  &__text-block {
+    margin-top: 58.5px;
+    margin-left: 70px;
+  }
 
   &__title {
-
+    max-width: 370px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 45px;
   }
 
   &__text {
-
+    margin: 0;
+    padding-bottom: 58.5px;
   }
 
   &__button {
-
+    min-width: calc(119px + 65px*2);
+    max-height: 60px;
+    margin-top: 105px;
+    margin-right: 70px;
+    padding: 18px 65px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #f53855;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(245, 56, 56, 0.35);
   }
+
 }
