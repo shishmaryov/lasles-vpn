@@ -16,7 +16,7 @@ Description:
 
 
 Demo:
-![Альтернативный текст](Preview.jpg)
+![Preview](Preview.jpg)
 
 
 Tehnologies:
