@@ -66,6 +66,7 @@
   justify-content: space-between;
   min-width: 0;
   padding: 0 10px;
+  padding-bottom: 100px;
 }
 /* Слайдер запущен */
 .slick-slider.slick-initialized{}
@@ -87,7 +88,7 @@
 
 /* Слайд */
 .slick-slide {
-  margin-bottom: 150px;
+  margin-bottom: 120px;
   border: 2px solid #DDDDDD;
   border-radius: 10px;
   margin: 0 10px 150px 10px;
@@ -119,6 +120,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 100px;
+  @media(max-width:1024px){
+    top: 278px;
+  }
   @media(max-width: 768px){
     top: 500px;
   }
