@@ -11,6 +11,10 @@
   box-shadow: 0 0 50px rgba(13, 16, 37, 0.06px);
   flex-wrap: wrap;
 
+  @media (max-width: 768px){
+    top: -520px;
+  }
+
   @media(max-width: 1140px){
     width: 100%;
   }
@@ -53,7 +57,7 @@
     box-shadow: 0 5px 15px rgba(245, 56, 56, 0.35);
     @media(max-width: 768px){
       margin-left: 30px;
-
+      margin-bottom: 30px;
     }
   }
 

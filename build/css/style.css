@@ -906,6 +906,9 @@ th {
   padding-bottom: 100px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (max-width: 768px) {
+    .footer {
+      margin-top: 570px; } }
   .footer__lists {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -963,6 +966,9 @@ th {
           box-shadow: 0 0 50px rgba(13, 16, 37, 0.06);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (max-width: 768px) {
+    .subscribe {
+      top: -520px; } }
   @media (max-width: 1140px) {
     .subscribe {
       width: 100%; } }
@@ -999,7 +1005,8 @@ th {
             box-shadow: 0 5px 15px rgba(245, 56, 56, 0.35); }
     @media (max-width: 768px) {
       .subscribe__button {
-        margin-left: 30px; } }
+        margin-left: 30px;
+        margin-bottom: 30px; } }
 
 .info {
   max-width: 340px; }
