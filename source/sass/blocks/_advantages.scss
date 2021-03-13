@@ -1,8 +1,10 @@
 .advantages {
+  display: flex;
   margin-top: 103px;
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 1140px;
     margin: 0;
@@ -16,6 +18,7 @@
     display: flex;
     padding: 67px 0;
     vertical-align: middle;
+
   }
 
   &__text-block {

@@ -2,9 +2,14 @@
   display: flex;
   justify-content: space-between;
   margin-top: 88px;
+  @media(max-width: 1024px){
+    display: block;
+  }
 
   &__text-block {
-
+    @media(max-width: 1024px){
+      text-align: center;
+    }
   }
 
   &__title {
@@ -29,6 +34,9 @@
   }
 
   &__img {
-
+    @media (max-width: 1024px){
+      width: 50%;
+      height: auto;
+    }
   }
 }
