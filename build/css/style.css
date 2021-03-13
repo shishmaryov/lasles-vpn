@@ -400,6 +400,9 @@ th {
   @media (min-width: 768px) {
     .container {
       max-width: 768px; } }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px; } }
   @media (min-width: 1140px) {
     .container {
       max-width: 1140px; } }
@@ -409,50 +412,178 @@ th {
   width: relative; }
 
 .header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
   vertical-align: middle; }
-  @media (max-width: 1140px) {
-    .header__nav {
+  @media (min-width: 1024px) {
+    .header {
+      max-width: 1024px;
+      height: auto;
+      margin: auto;
+      margin-top: 45px;
+      padding: 0 20px; } }
+  @media (min-width: 1140px) {
+    .header {
+      max-width: 1140px; } }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    height: 50px;
+    background-color: #fff; }
+    @media (min-width: 1024px) {
+      .header::before {
+        display: none; } }
+  .header__logo {
+    position: relative;
+    z-index: 3;
+    padding-left: 20px; }
+    @media (min-width: 1024px) {
+      .header__logo {
+        padding-left: 0; } }
+  @media (max-width: 1024px) {
+    .header__menu {
       display: none; } }
+  .header__menu--active {
+    display: block; }
+    @media (max-width: 1024px) {
+      .header__menu--active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 5px 15px rgba(11, 19, 42, 0.3);
+                box-shadow: 0 5px 15px rgba(11, 19, 42, 0.3); } }
+  .header__burger {
+    position: relative;
+    z-index: 4;
+    display: block;
+    height: 37px;
+    padding-right: 70px;
+    border-radius: 50%; }
+    @media (min-width: 1024px) {
+      .header__burger {
+        display: none;
+        padding-right: 0; } }
+  .header__burger span,
+  .header__burger span::before,
+  .header__burger span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    margin-top: -1px;
+    margin-left: -10px;
+    background-color: #F53855; }
+  .header__burger span::before,
+  .header__burger span::after {
+    content: '';
+    display: block;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .header__burger span::before {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); }
+  .header__burger span::after {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px); }
+  .header__burger--active span:before {
+    width: 10px;
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom; }
+  .header__burger--active span:after {
+    width: 10px;
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    -webkit-transform-origin: left top;
+            transform-origin: left top; }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%; }
+    @media (max-width: 1024px) {
+      .header__nav {
+        position: static;
+        width: auto;
+        height: auto; } }
 
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 451px;
+  width: 100%;
+  height: 200px;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 80px;
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  padding-bottom: 30px;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .nav__list {
+      padding-top: 10px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 451px;
+      height: auto;
+      padding-bottom: 0; } }
 
 .nav__link {
   color: #4F5665;
   text-decoration: none; }
 
-.login__in {
-  margin-right: 30px;
-  font-weight: 500;
-  color: #0B132A;
-  text-decoration: none; }
-
-.login__up {
-  padding: 13px 45px;
-  font-weight: 500;
-  color: #F53855;
-  text-decoration: none;
-  border: 1px solid #F53855;
-  border-radius: 50px;
-  background-color: #fff;
-  min-width: calc(59px + 45px * 2); }
+.login {
+  display: none; }
+  @media (min-width: 1024px) {
+    .login {
+      display: block; } }
+  .login__in {
+    margin-right: 30px;
+    font-weight: 500;
+    color: #0B132A;
+    text-decoration: none; }
+  .login__up {
+    padding: 13px 45px;
+    font-weight: 500;
+    color: #F53855;
+    text-decoration: none;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    background-color: #fff;
+    min-width: calc(59px + 45px * 2); }
 
 .promo {
   display: -webkit-box;
@@ -797,10 +928,10 @@ th {
 
 /* Слайд */
 .slick-slide {
+  margin: 0 10px 150px 10px;
   margin-bottom: 120px;
   border: 2px solid #DDDDDD;
-  border-radius: 10px;
-  margin: 0 10px 150px 10px; }
+  border-radius: 10px; }
 
 /* Слайд активный (показывается) */
 .slick-active {
@@ -814,6 +945,7 @@ th {
   position: absolute;
   top: 270px;
   z-index: 10;
+  z-index: 1;
   width: 60px;
   height: 60px;
   font-size: 0px;
@@ -851,6 +983,9 @@ th {
 /* Стрелка не активная */
 /* Точки (булиты) */
 .slick-dots {
+  position: absolute;
+  top: 290px;
+  left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,12 +996,9 @@ th {
       -ms-flex-align: center;
           align-items: center;
   width: 135px;
-  padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  position: absolute;
-  top: 290px;
-  left: 20px; }
+  padding-left: 0; }
   @media (max-width: 768px) {
     .slick-dots {
       display: none; } }
@@ -878,14 +1010,14 @@ th {
 /* Активная точка */
 /* Элемент точки */
 .slick-dots li button {
-  font-size: 0;
-  line-height: 0;
   width: 15px;
   height: 15px;
   list-style: none;
+  font-size: 0;
+  line-height: 0;
   background-color: #DDE0E4;
-  border-radius: 100px;
-  border: none; }
+  border: none;
+  border-radius: 100px; }
 
 .slick-dots li.slick-active button {
   width: 45px;
