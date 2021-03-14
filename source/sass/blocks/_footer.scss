@@ -64,6 +64,15 @@
     font-size: 18px;
     line-height: 30px;
     color: #0B132A;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      text-decoration: underline;
+    }
+    &:active {
+      color: #586894;
+    }
   }
 
   &__link {
@@ -71,5 +80,14 @@
     line-height: 30px;
     color: #4F5665;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      text-decoration: underline;
+    }
+    &:active {
+      color: #586894;
+    }
   }
 }

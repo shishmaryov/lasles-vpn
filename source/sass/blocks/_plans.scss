@@ -41,6 +41,9 @@
   margin-bottom: 50px;
   border: 2px solid #DDDDDD;
   border-radius: 10px;
+  &:hover {
+    border: 2px solid #F53855;
+  }
 
   &__img {
     padding: 80px 93px 0px 93px;
@@ -120,5 +123,13 @@
     background-color: #fff;
     border: 1px solid #F53855;
     border-radius: 50px;
+    &:hover {
+      color: #fff;
+      background-color: #F53855;
+    }
+    &:active {
+      color: #fff;
+      background-color: #E43535;
+    }
   }
 }

@@ -40,6 +40,12 @@
     border: none;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(245, 56, 56, 0.35);
+    &:hover{
+      background-color: #FD6262;
+    }
+    &:active{
+      background-color: #E43535;
+    }
   }
 
   &__img {

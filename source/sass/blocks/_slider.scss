@@ -136,8 +136,14 @@
 .slick-arrow.slick-prev{
   right: 110px;
   background-color: #fff;
-  background-image: url("../../img/arrow--prev.svg");
-  border: 1px solid #F53855;
+  background-image: url("../img/arrow--prev.svg");
+  border: 2px solid #F53855;
+  &:hover {
+    border: 2px solid #FD6262;
+  }
+  &:active {
+    border: 3px solid #E43535;
+  }
 
   @media(min-width: 768px){
     left: 570px;
@@ -156,8 +162,14 @@
 .slick-arrow.slick-next{
   right: 20px;
   background-color: #F53855;
-  background-image: url("../../img/arrow--next.svg");
+  background-image: url("../img/arrow--next.svg");
   border: none;
+  &:hover {
+    background-color: #FD6262;
+  }
+  &:active {
+    background-color: #E43535;
+  }
 }
 
 /* Стрелка не активная */

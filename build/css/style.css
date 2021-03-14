@@ -576,6 +576,12 @@ th {
 .nav__link {
   color: #4F5665;
   text-decoration: none; }
+  .nav__link:hover {
+    text-decoration: underline; }
+  .nav__link:visited {
+    text-decoration: underline; }
+  .nav__link:active {
+    color: #586894; }
 
 .login {
   display: none; }
@@ -587,6 +593,12 @@ th {
     font-weight: 500;
     color: #0B132A;
     text-decoration: none; }
+    .login__in:hover {
+      text-decoration: underline; }
+    .login__in:visited {
+      text-decoration: underline; }
+    .login__in:active {
+      color: #586894; }
   .login__up {
     min-width: calc(59px + 45px * 2);
     padding: 13px 45px;
@@ -596,6 +608,12 @@ th {
     background-color: #fff;
     border: 1px solid #F53855;
     border-radius: 50px; }
+    .login__up:hover {
+      color: #fff;
+      background-color: #F53855; }
+    .login__up:active {
+      color: #fff;
+      background-color: #E43535; }
 
 .promo {
   display: block;
@@ -635,6 +653,10 @@ th {
     border-radius: 10px;
     -webkit-box-shadow: 0px 5px 15px rgba(245, 56, 56, 0.35);
             box-shadow: 0px 5px 15px rgba(245, 56, 56, 0.35); }
+    .promo__button:hover {
+      background-color: #FD6262; }
+    .promo__button:active {
+      background-color: #E43535; }
   .promo__img {
     width: 100%;
     height: auto;
@@ -804,6 +826,8 @@ th {
   margin-bottom: 50px;
   border: 2px solid #DDDDDD;
   border-radius: 10px; }
+  .plan:hover {
+    border: 2px solid #F53855; }
   .plan__img {
     padding: 80px 93px 0px 93px;
     padding-top: 80px;
@@ -863,6 +887,12 @@ th {
     background-color: #fff;
     border: 1px solid #F53855;
     border-radius: 50px; }
+    .plan__button:hover {
+      color: #fff;
+      background-color: #F53855; }
+    .plan__button:active {
+      color: #fff;
+      background-color: #E43535; }
 
 .location {
   margin-bottom: 50px; }
@@ -1039,8 +1069,12 @@ th {
 .slick-arrow.slick-prev {
   right: 110px;
   background-color: #fff;
-  background-image: url("../../img/arrow--prev.svg");
-  border: 1px solid #F53855; }
+  background-image: url("../img/arrow--prev.svg");
+  border: 2px solid #F53855; }
+  .slick-arrow.slick-prev:hover {
+    border: 2px solid #FD6262; }
+  .slick-arrow.slick-prev:active {
+    border: 3px solid #E43535; }
   @media (min-width: 768px) {
     .slick-arrow.slick-prev {
       left: 570px; } }
@@ -1055,8 +1089,12 @@ th {
 .slick-arrow.slick-next {
   right: 20px;
   background-color: #F53855;
-  background-image: url("../../img/arrow--next.svg");
+  background-image: url("../img/arrow--next.svg");
   border: none; }
+  .slick-arrow.slick-next:hover {
+    background-color: #FD6262; }
+  .slick-arrow.slick-next:active {
+    background-color: #E43535; }
 
 /* Стрелка не активная */
 /* Точки (булиты) */
@@ -1158,12 +1196,24 @@ th {
   font-size: 18px;
   line-height: 30px;
   color: #0B132A; }
+  .list__title:hover {
+    text-decoration: underline; }
+  .list__title:visited {
+    text-decoration: underline; }
+  .list__title:active {
+    color: #586894; }
 
 .list__link {
   font-size: 16px;
   line-height: 30px;
   color: #4F5665;
   text-decoration: none; }
+  .list__link:hover {
+    text-decoration: underline; }
+  .list__link:visited {
+    text-decoration: underline; }
+  .list__link:active {
+    color: #586894; }
 
 .subscribe {
   position: absolute;
@@ -1180,6 +1230,7 @@ th {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  background-color: #fff;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 50px rgba(13, 16, 37, 0.06);
           box-shadow: 0 0 50px rgba(13, 16, 37, 0.06); }
@@ -1221,11 +1272,15 @@ th {
     border-radius: 10px;
     -webkit-box-shadow: 0 5px 15px rgba(245, 56, 56, 0.35);
             box-shadow: 0 5px 15px rgba(245, 56, 56, 0.35); }
+    .subscribe__button:hover {
+      background-color: #FD6262; }
+    .subscribe__button:active {
+      background-color: #E43535; }
     @media (min-width: 768px) {
       .subscribe__button {
+        margin-top: 105px;
         margin-bottom: 0px;
-        margin-left: 0;
-        margin-top: 105px; } }
+        margin-left: 0; } }
 
 .info {
   max-width: 340px;
