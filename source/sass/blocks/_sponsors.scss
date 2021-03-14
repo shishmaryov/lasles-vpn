@@ -1,8 +1,12 @@
 .sponsors {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  justify-content: space-between;
+  margin-bottom: 75px;
+
+  @media(min-width: 1024px){
+    margin-bottom: 50px;
+  }
 
   &__logo {
     margin: auto;

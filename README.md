@@ -20,3 +20,8 @@ Demo:
 
 
 Tehnologies:
+Languages: HTML5, CSS3, Javascript
+
+Libraries: jQuery, slick
+
+Approach: mobile first

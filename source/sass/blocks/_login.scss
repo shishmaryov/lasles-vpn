@@ -13,13 +13,13 @@
   }
 
   &__up {
+    min-width: calc(59px + 45px * 2);
     padding: 13px 45px;
     font-weight: 500;
     color: #F53855;
     text-decoration: none;
+    background-color: #fff;
     border: 1px solid #F53855;
     border-radius: 50px;
-    background-color: #fff;
-    min-width: calc(59px + 45px * 2);
   }
 }

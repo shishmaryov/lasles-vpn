@@ -67,7 +67,9 @@
   min-width: 0;
   padding: 0 10px;
   padding-bottom: 100px;
+  padding-bottom: 89px;
 }
+
 /* Слайдер запущен */
 .slick-slider.slick-initialized{}
 
@@ -122,7 +124,7 @@
   background-position: center center;
   border-radius: 100px;
 
-  @media(max-width:1024px){
+  @media(min-width:768px){
     top: 278px;
   }
   @media(max-width: 768px){
@@ -132,12 +134,21 @@
 
 /* Стрелка влево */
 .slick-arrow.slick-prev{
-  right: 100px;
+  right: 110px;
   background-color: #fff;
   background-image: url("../../img/arrow--prev.svg");
   border: 1px solid #F53855;
-  @media(max-width: 768px){
-    left: 20px;
+
+  @media(min-width: 768px){
+    left: 570px;
+  }
+
+  @media(min-width: 1024px){
+    left: 785px;
+  }
+
+  @media(min-width: 1140px){
+    left: 910px;
   }
   }
 
@@ -147,9 +158,6 @@
   background-color: #F53855;
   background-image: url("../../img/arrow--next.svg");
   border: none;
-  @media(max-width: 768px){
-    right: 20px;
-  }
 }
 
 /* Стрелка не активная */
@@ -157,18 +165,20 @@
 
 /* Точки (булиты) */
 .slick-dots{
-  position: absolute;
-  top: 290px;
-  left: 20px;
   display: flex;
+  position: absolute;
+  top: 515px;
+  left: 20px;
   justify-content: space-between;
   align-items: center;
-  width: 135px;
+  width: 75px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  @media(max-width: 768px){
-    display: none;
+
+  @media(min-width: 768px){
+    top: 290px;
+    width: 135px;
   }
 }
 
@@ -194,9 +204,13 @@
 }
 
 .slick-dots li.slick-active button{
-  width: 45px;
+  width: 15px;
   background-color: #F53855;
   border-radius: 200px;
+
+  @media(min-width: 769px){
+    width: 45px;
+  }
 
   :active {
     border: none;
