@@ -1,5 +1,10 @@
 .info {
   max-width: 340px;
+  margin-top: 50px;
+
+  @media(min-width: 768px){
+    margin-top: auto;
+  }
 
   &__text {
 

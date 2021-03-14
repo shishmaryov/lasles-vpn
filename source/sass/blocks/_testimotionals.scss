@@ -1,5 +1,9 @@
 .testimotionals {
 
+  @media (min-width: 1024px){
+    padding-bottom: 125px;
+  }
+
   &__title {
     margin-top: 0;
     margin-bottom: 20px;
@@ -7,8 +11,12 @@
   }
 
   &__text {
-    text-align: center;
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media(min-width: 1024px) {
+      margin-bottom: 60px;
+    }
   }
 }

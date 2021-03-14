@@ -1,11 +1,4 @@
 $(document).ready(function(){
-  $('.header__burger').on('click', function(e) {
-    e.preventDefault;
-    $(this).toggleClass('header__burger--active');
-  });
-})
-
-$(document).ready(function(){
   $('.slider').slick({
     infinite: true,
     dots: true,
@@ -16,8 +9,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.header__burger').on('click', function(e) {
-    e.preventDefault;
-    $('.header__menu').toggleClass('header__menu--active');
-  });
+	$('.header__burger').click(function(){
+		$('.header__menu').toggleClass('header__menu--active'); return false;
+	});
 });

@@ -1,5 +1,9 @@
 .location {
-  margin-bottom: 35px;
+  margin-bottom: 50px;
+
+  @media(min-width: 1024px){
+    margin-bottom: 35px;
+  }
 
   &__title {
     max-width: 385px;
@@ -12,13 +16,19 @@
 
   &__text {
     margin-top: 0;
-    margin-bottom: 155px;
+    margin-bottom: 50px;
     text-align: center;
+
+    @media(min-width: 1024px){
+      margin-bottom: 155px;
+    }
   }
 
   &__img {
-    @media (max-width: 1024px){
-      width: 100%;
+    width: 100%;
+    height: auto;
+    @media (min-width: 1024px){
+      width: auto;
       height: auto;
     }
   }
