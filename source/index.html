@@ -5,12 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
 
   <title>Lasles VPN</title>
 </head>
 <body>
   <header class="header">
-    <img src="img/logo.svg" alt="Логотип компании Lasles VPN" width="148px" height="37px" class="logo header__logo">
+    <img src="img/logo.svg" alt="Логотип компании Lasles VPN" class="logo header__logo">
     <a href="#" class="header__burger">
       <span></span>
     </a>
@@ -45,35 +48,35 @@
         <p class="text promo__text">Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
         <button class="promo__button">Get Started</button>
       </div>
-      <img src="img/illustration-1.svg" alt="Иллюстрация" width="611px" height="382px" class="promo__img">
+      <img src="img/illustration-1.svg" alt="Иллюстрация" class="promo__img">
     </section>
-    <section class="advantages container">
+    <div class="advantages container">
       <ul class="advantages__list">
         <li class="advantages__item">
-          <img src="img/icon-user.svg" alt="Иконка пользователя" width="55px" height="55px" class="advantages__icon">
+          <img src="img/icon-user.svg" alt="Иконка пользователя" class="advantages__icon">
           <div class="advantages__text-block">
             <span class="advantages__number">90+</span>
             <p class="advantages__text">Users</p>
           </div>
         </li>
         <li class="advantages__item">
-          <img src="img/icon-location.svg" alt="Иконка локации"  width="55px" height="55px" class="advantages__icon">
+          <img src="img/icon-location.svg" alt="Иконка локации" class="advantages__icon">
           <div class="advantages__text-block">
             <span class="advantages__number">30+</span>
             <p class="advantages__text">Locations</p>
           </div>
         </li>
         <li class="advantages__item">
-          <img src="img/icon-server.svg" alt="Иконка сервера"  width="55px" height="55px" class="advantages__icon">
+          <img src="img/icon-server.svg" alt="Иконка сервера" class="advantages__icon">
           <div class="advantages__text-block">
             <span class="advantages__number">50+</span>
             <p class="advantages__text">Servers</p>
           </div>
         </li>
       </ul>
-    </section>
+    </div>
     <section class="features container">
-      <img src="img/illustration-2.svg" alt="Иллюстрация" with="508px" height="415px" class="features__img">
+      <img src="img/illustration-2.svg" alt="Иллюстрация" class="features__img">
       <div class="features__text-block">
         <h2 class="title features__title">We Provide Many Features You Can Use</h2>
         <p class="text features__text">You can explore the features that we provide with fun and have their own functions each feature.</p>
@@ -91,7 +94,7 @@
         <p class="text plans__text">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
         <ul class="plans__list">
           <li class="plan">
-            <img src="img/illustration-3.svg" alt="Иллюстрация" width="145px" height="165px" class="plan__img">
+            <img src="img/illustration-3.svg" alt="Иллюстрация" class="plan__img">
             <h3 class="plan__title">Free plan</h3>
             <ul class="plan__list">
               <li class="plan__item">Unlimited Bandwitch</li>
@@ -103,7 +106,7 @@
             <button class="plan__button">Select</button>
           </li>
           <li class="plan">
-            <img src="img/illustration-3.svg" alt="Иллюстрация" width="145px" height="165px" class="plan__img">
+            <img src="img/illustration-3.svg" alt="Иллюстрация" class="plan__img">
             <h3 class="plan__title">Standart plan</h3>
             <ul class="plan__list plan__list--standart">
               <li class="plan__item">Unlimited Bandwitch</li>
@@ -116,7 +119,7 @@
             <button class="plan__button">Select</button>
           </li>
           <li class="plan">
-            <img src="img/illustration-3.svg" alt="Иллюстрация" width="145px" height="165px" class="plan__img">
+            <img src="img/illustration-3.svg" alt="Иллюстрация" class="plan__img">
             <h3 class="plan__title">Premium plan</h3>
             <ul class="plan__list plan__list--premium">
               <li class="plan__item">Unlimited Bandwitch</li>
@@ -134,15 +137,15 @@
       <section class="location container">
         <h2 class="title location__title">Huge Global Network of Fast VPN</h2>
         <p class="text location__text">See LaslesVPN everywhere to make it easier for you when you move locations.</p>
-        <img src="img/world-map.svg" alt="Распространение по миру" width="1060px" height="538px" class="location__img">
+        <img src="img/world-map.svg" alt="Распространение по миру" class="location__img">
       </section>
-      <section class="sponsors container">
-        <img src="img/netflix.png" alt="Netflix" width="200px" height="112.5px" class="sponsors__logo">
-        <img src="img/reddit.png" alt="Reddit" width="156.25px" height="50.62px" class="sponsors__logo">
-        <img src="img/amazon.png" alt="Amazon" width="277.76px" height="208.32px" class="sponsors__logo">
-        <img src="img/discord.png" alt="Discord" width="187.02px" height="63.59px" class="sponsors__logo">
-        <img src="img/spotify.png" alt="Spotify" width="171.28px" height="51.34px" class="sponsors__logo">
-      </section>
+      <div class="sponsors container">
+        <img src="img/netflix.png" alt="Netflix" class="sponsors__logo">
+        <img src="img/reddit.png" alt="Reddit" class="sponsors__logo">
+        <img src="img/amazon.png" alt="Amazon" class="sponsors__logo">
+        <img src="img/discord.png" alt="Discord" class="sponsors__logo">
+        <img src="img/spotify.png" alt="Spotify" class="sponsors__logo">
+      </div>
       <section class="testimotionals container">
         <h2 class="title testimotionals__title">Trusted by Thousands of Happy Customer</h2>
         <p class="text testimotionals__text">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
@@ -151,7 +154,7 @@
           <div class="slider__item">
             <div class="slider__top-wrapper">
               <div class="author">
-                <img src="img/avatar-Viezh-Robert.png" width="50px" height="50px" alt="Автар">
+                <img src="img/avatar-Viezh-Robert.png" alt="Автар">
                 <div class="author__text-block">
                   <h3 class="text author__name">Viezh Robert</h3>
                   <span class="text author__city">Warsaw, Poland</span>
@@ -166,7 +169,7 @@
           <div class="slider__item">
             <div class="slider__top-wrapper">
               <div class="author">
-                <img src="img/avatar-Yessica-Christy.png" width="50px" height="50px" alt="Аватар">
+                <img src="img/avatar-Yessica-Christy.png" alt="Аватар">
                 <div class="author__text-block">
                   <h3 class="text author__name">Yessica Christy</h3>
                   <span class="text author__city">Shanxi, China</span>
@@ -179,7 +182,7 @@
           <div class="slider__item">
             <div class="slider__top-wrapper">
               <div class="author">
-                <img src="img/avatar-Kim-Young-Jou.png" width="50px" height="50px" alt="Аватар">
+                <img src="img/avatar-Kim-Young-Jou.png" alt="Аватар">
                 <div class="author__text-block">
                   <h3 class="text author__name">Kim Young Jou</h3>
                   <span class="text author__city">Seoul, South Korea</span>
@@ -206,23 +209,23 @@
       <button class="subscribe__button">Subscribe Now</button>
     </div>
     <div class="info">
-      <img src="img/logo.svg" alt="Логотип Lasles VPN" width="148px" height="36px" class="logo footer__logo">
+      <img src="img/logo.svg" alt="Логотип Lasles VPN" class="logo footer__logo">
       <p class="text info__text"><b>LaslesVPN</b> is a private virtual network that has unique features and has high security.</p>
       <div class="info__social-icons">
         <ul class="social-icons__list">
           <li class="social-icons__item">
             <a href="#" class="social-icons__link">
-              <img src="img/icon-facebook.svg" alt="Facebook" width="34px" height="34px">
+              <img src="img/icon-facebook.svg" alt="Facebook">
             </a>
           </li>
           <li class="social-icons__item">
             <a href="#" class="social-icons__link">
-              <img src="img/icon-twitter.svg" alt="Twitter" width="34px" height="34px">
+              <img src="img/icon-twitter.svg" alt="Twitter">
             </a>
           </li>
           <li class="social-icons__item">
             <a href="#" class="social-icons__link">
-              <img src="img/icon-instagram.svg" alt="Instagram" width="34px" height="34px">
+              <img src="img/icon-instagram.svg" alt="Instagram">
             </a>
           </li>
         </ul>
@@ -232,7 +235,7 @@
     <div class="footer__lists">
       <ul class="product__list">
         <li class="list__item">
-          <h2 href="#" class="text list__title">Product</h2>
+          <h2 class="text list__title">Product</h2>
         </li>
         <li class="list__item">
           <a href="#" class="text list__link">Download</a>
@@ -256,7 +259,7 @@
 
       <ul class="engage__list">
         <li class="list__item">
-          <h2 href="#" class="text list__title">Engage</h2>
+          <h2 class="text list__title">Engage</h2>
         </li>
         <li class="list__item">
           <a href="#" class="text list__link">LaslesVPN ?</a>
@@ -280,7 +283,7 @@
 
       <ul class="earn-money__list">
         <li class="list__item">
-          <h2 href="#" class="text list__title">Earn Money</h2>
+          <h2 class="text list__title">Earn Money</h2>
         </li>
         <li class="list__item">
           <a href="#" class="text list__link">Affiliate</a>
@@ -292,8 +295,4 @@
     </div>
   </footer>
 </body>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
 </html>
