@@ -10,6 +10,15 @@
     font-weight: 500;
     color: #0B132A;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      text-decoration: underline;
+    }
+    &:active {
+      color: #586894;
+    }
   }
 
   &__up {
@@ -21,5 +30,13 @@
     background-color: #fff;
     border: 1px solid #F53855;
     border-radius: 50px;
+    &:hover {
+      color: #fff;
+      background-color: #F53855;
+    }
+    &:active {
+      color: #fff;
+      background-color: #E43535;
+    }
   }
 }

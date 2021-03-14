@@ -28,5 +28,14 @@
   &__link {
     color: #4F5665;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      text-decoration: underline;
+    }
+    &:active {
+      color: #586894;
+    }
   }
 }
