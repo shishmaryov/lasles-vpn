@@ -7,14 +7,21 @@
   }
 
   &__text {
-
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   &__social-icons {
-
+    margin-left: -15px;
   }
 
   &__copyright {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
 
+    @media(min-width: 768px){
+      text-align: left;
+    }
   }
 }

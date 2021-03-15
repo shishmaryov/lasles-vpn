@@ -16,8 +16,13 @@
 
   &__lists {
     display: flex;
+    display: block;
     justify-content: space-between;
     width: 570px;
+
+    @media(min-width: 768px){
+      display: flex;
+    }
   }
 
   &__logo {
@@ -27,30 +32,41 @@
 
 .product__list {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   padding-left: 0;
   list-style: none;
+  text-align: center;
 
-
+  @media(min-width: 768px){
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 
 .engage__list {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   padding-left: 0;
   list-style: none;
+  text-align: center;
 
-
+  @media(min-width: 768px){
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 
 .earn-money__list {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   padding-left: 0;
   list-style: none;
+  text-align: center;
 
-
-
+  @media(min-width: 768px){
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 
 .list {

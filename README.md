@@ -11,17 +11,17 @@ Site: <https://shishmaryov.github.io/lasles-vpn/build/index.html>
 
 
 
-Description:
-
-
-
 Demo:
 ![Preview](Preview.jpg)
 
 
-Tehnologies:
-Languages: HTML5, CSS3, Javascript
+Tehnologies: Languages: HTML5, CSS3, Javascript
 
 Libraries: jQuery, slick
 
 Approach: mobile first
+
+
+Google page speed:
+Mobile: 92/100
+Desktop: 99/100

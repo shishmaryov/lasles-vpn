@@ -976,6 +976,9 @@ th {
   display: -ms-flexbox;
   display: flex;
   vertical-align: middle; }
+  .author__img {
+    width: 50px;
+    height: 50px; }
   .author__text-block {
     margin-left: 20px; }
   .author__name {
@@ -1168,28 +1171,49 @@ th {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    display: block;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 570px; }
+    @media (min-width: 768px) {
+      .footer__lists {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
 
 .product__list {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .product__list {
+      margin-bottom: 0;
+      text-align: left; } }
 
 .engage__list {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .engage__list {
+      margin-bottom: 0;
+      text-align: left; } }
 
 .earn-money__list {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .earn-money__list {
+      margin-bottom: 0;
+      text-align: left; } }
 
 .list__title {
   font-weight: 500;
@@ -1288,13 +1312,36 @@ th {
   @media (min-width: 768px) {
     .info {
       margin-top: auto; } }
+  .info__text {
+    margin-top: 20px;
+    margin-bottom: 30px; }
+  .info__social-icons {
+    margin-left: -15px; }
+  .info__copyright {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .info__copyright {
+        text-align: left; } }
 
 .social-icons__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
   list-style: none; }
+
+.social-icons__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto; }
+  @media (min-width: 768px) {
+    .social-icons__item {
+      margin: 0; } }
 
 body {
   font-family: "Rubik", sans-serif; }
