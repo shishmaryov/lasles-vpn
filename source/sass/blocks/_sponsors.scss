@@ -1,0 +1,14 @@
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 75px;
+
+  @media(min-width: 1024px){
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+    margin: auto;
+  }
+}

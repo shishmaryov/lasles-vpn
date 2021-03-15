@@ -1,0 +1,235 @@
+.slider {
+
+  &__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    vertical-align: top;
+
+  }
+}
+
+.slide {
+  &__opinion {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+}
+
+.author {
+  display: flex;
+  vertical-align: middle;
+
+  &__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__text-block {
+    margin-left: 20px;
+  }
+
+  &__name {
+    max-width: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: #0B132A;
+  }
+
+  &__city {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #4F5665;
+  }
+}
+
+.ball {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-right: 26px;
+
+  &::after {
+    content: url("../img/icon-star.svg");
+    position: absolute;
+    top: 3px;
+    right: 0;
+
+  }
+}
+
+/* Слайдер */
+.slick-slider{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 0 10px;
+  padding-bottom: 100px;
+  padding-bottom: 89px;
+}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  min-width: 0;
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Слайд */
+.slick-slide {
+  margin: 0 10px 150px 10px;
+  margin-bottom: 120px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+}
+/* Слайд активный (показывается) */
+
+.slick-active{
+  border: 1px solid #F53855;
+}
+
+/* Слайд основной */
+.slick-slide.slick-current{}
+
+/* Слайд по центру */
+.slick-slide.slick-center{}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+/* Стрелка */
+.slick-arrow{
+  position: absolute;
+  top: 270px;
+  z-index: 10;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  font-size: 0px;
+  line-height: 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100px;
+
+  @media(min-width:768px){
+    top: 278px;
+  }
+  @media(max-width: 768px){
+    top: 500px;
+  }
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+  right: 110px;
+  background-color: #fff;
+  background-image: url("../img/arrow-prev.svg");
+  border: 2px solid #F53855;
+  &:hover {
+    border: 2px solid #FD6262;
+  }
+  &:active {
+    border: 3px solid #E43535;
+  }
+
+  @media(min-width: 768px){
+    left: 570px;
+  }
+
+  @media(min-width: 1024px){
+    left: 785px;
+  }
+
+  @media(min-width: 1140px){
+    left: 910px;
+  }
+  }
+
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+  right: 20px;
+  background-color: #F53855;
+  background-image: url("../img/arrow-next.svg");
+  border: none;
+  &:hover {
+    background-color: #FD6262;
+  }
+  &:active {
+    background-color: #E43535;
+  }
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки (булиты) */
+.slick-dots{
+  display: flex;
+  position: absolute;
+  top: 515px;
+  left: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 75px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  @media(min-width: 768px){
+    top: 290px;
+    width: 135px;
+  }
+}
+
+.slick-dots li{
+  list-style: none;
+  border: none;
+}
+/* Активная точка */
+.slick-dots li.slick-active{
+}
+
+/* Элемент точки */
+.slick-dots li button{
+  width: 15px;
+  height: 15px;
+  list-style: none;
+  font-size: 0;
+  line-height: 0;
+  background-color: #DDE0E4;
+  border: none;
+  border-radius: 100px;
+
+}
+
+.slick-dots li.slick-active button{
+  width: 15px;
+  background-color: #F53855;
+  border-radius: 200px;
+
+  @media(min-width: 769px){
+    width: 45px;
+  }
+
+  :active {
+    border: none;
+  }
+}

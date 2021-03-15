@@ -1,0 +1,27 @@
+.info {
+  max-width: 340px;
+  margin-top: 50px;
+
+  @media(min-width: 768px){
+    margin-top: auto;
+  }
+
+  &__text {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__social-icons {
+    margin-left: -15px;
+  }
+
+  &__copyright {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media(min-width: 768px){
+      text-align: left;
+    }
+  }
+}

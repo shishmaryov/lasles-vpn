@@ -1,0 +1,135 @@
+.plans {
+  margin-bottom: 75px;
+
+  @media(min-width: 1024px){
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    padding-top: 100px;
+    text-align: center;
+
+    @media(min-width: 1024px){
+      margin-top: 0;
+      padding-top: 50px;
+    }
+  }
+
+  &__text {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media(min-width: 1024px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+}
+
+.plan {
+  margin-bottom: 50px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  &:hover {
+    border: 2px solid #F53855;
+  }
+
+  &__img {
+    padding: 80px 93px 0px 93px;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+
+  }
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 130px;
+    padding-left: 114px;
+    list-style: none;
+
+    &--standart {
+      margin-bottom: 90px;
+    }
+
+    &--premium {
+      margin-bottom: 50px;
+    }
+  }
+
+
+  &__item {
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #4F5665;
+
+    &::before {
+      content: url("../img/icon-check.svg");
+      position: absolute;
+      top: 0;
+      left: -40px;
+      width: 24px;
+      height: 24px;
+
+    }
+  }
+
+  &__price {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &__button {
+    display: block;
+    min-width: calc(52px + 62px * 2);
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    padding: 13px 62px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #F53855;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    &:hover {
+      color: #fff;
+      background-color: #F53855;
+    }
+    &:active {
+      color: #fff;
+      background-color: #E43535;
+    }
+  }
+}

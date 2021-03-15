@@ -1,0 +1,136 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  vertical-align: middle;
+
+  @media (min-width:1024px){
+    max-width: 1024px;
+    height: auto;
+    margin: auto;
+    margin-top: 45px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: 1140px){
+    max-width: 1140px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    height: 50px;
+    background-color: #fff;
+
+    @media(min-width: 1024px){
+      display: none;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 3;
+    padding-left: 20px;
+    @media(min-width: 1024px){
+      padding-left: 0;
+    }
+  }
+
+  &__menu {
+    display: none;
+    @media(min-width: 1024px){
+      display: block;
+    }
+    &--active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      display: block;
+      width: 100%;
+      height: auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(11, 19, 42, 0.3);
+      @media(min-width: 1024px){
+        position: static;
+        z-index: 1;
+        width: auto;
+        height: auto;
+        background-color: none;
+        border-radius: 0px;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__burger {
+    position: relative;
+    z-index: 4;
+    display: block;
+    height: 37px;
+    padding-right: 70px;
+    border-radius: 50%;
+
+    @media(min-width: 1024px){
+      display: none;
+      padding-right: 0;
+    }
+  }
+  &__burger span,
+  &__burger span::before,
+  &__burger span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px; margin-top: -1px; margin-left: -10px;
+    background-color: #F53855;
+  }
+  &__burger span::before,
+  &__burger span::after {
+    content: '';
+    display: block;
+    transition: 0.2s;
+  }
+  &__burger span::before {
+    transform: translateY(-5px);
+  }
+  &__burger span::after {
+    transform: translateY(5px);
+  }
+
+  &__burger--active span:before {
+    width: 10px;
+    transform: rotate(-35deg);
+    transform-origin: left bottom;
+  }
+  &__burger--active span:after {
+    width: 10px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+  }
+
+  &__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+
+    @media(min-width: 1024px){
+      position: static;
+      width: auto;
+      height: auto;
+    }
+  }
+}

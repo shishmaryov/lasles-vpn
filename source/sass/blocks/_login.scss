@@ -1,0 +1,42 @@
+.login {
+  display: none;
+
+  @media(min-width: 1024px){
+    display: block;
+  }
+
+  &__in {
+    margin-right: 30px;
+    font-weight: 500;
+    color: #0B132A;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      text-decoration: underline;
+    }
+    &:active {
+      color: #586894;
+    }
+  }
+
+  &__up {
+    min-width: calc(59px + 45px * 2);
+    padding: 13px 45px;
+    font-weight: 500;
+    color: #F53855;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    &:hover {
+      color: #fff;
+      background-color: #F53855;
+    }
+    &:active {
+      color: #fff;
+      background-color: #E43535;
+    }
+  }
+}
