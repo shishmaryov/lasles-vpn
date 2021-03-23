@@ -5,14 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
 
   <title>Lasles VPN</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header wow animate__animated animate__fadeInDown">
     <img src="img/logo.svg" alt="Логотип компании Lasles VPN" class="logo header__logo">
     <a href="#" class="header__burger">
       <span></span>
@@ -20,16 +25,16 @@
     <nav class="header__menu">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="#" class="nav__link">About</a>
+          <a href="#about" class="nav__link">About</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">Features</a>
+          <a href="#features" class="nav__link">Features</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">Pricing</a>
+          <a href="#pricing" class="nav__link">Pricing</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">Testimonials</a>
+          <a href="#testimotionals" class="nav__link">Testimonials</a>
         </li>
         <li class="nav__item">
           <a href="#" class="nav__link">Help</a>
@@ -42,15 +47,15 @@
     </div>
   </header>
   <main>
-    <section class="promo container">
-      <div class="promo__text-block">
+    <section id="about" class="promo container">
+      <div class="promo__text-block  wow animate__animated animate__fadeInLeft">
         <h1 class="title promo__title">Want anything to be easy with LaslesVPN.</h1>
         <p class="text promo__text">Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
         <button class="promo__button">Get Started</button>
       </div>
-      <img src="img/illustration-1.svg" alt="Иллюстрация" class="promo__img">
+      <img src="img/illustration-1.svg" alt="Иллюстрация" class="promo__img  wow animate__animated animate__fadeInRight">
     </section>
-    <div class="advantages container">
+    <div class="advantages container  wow animate__animated animate__fadeIn">
       <ul class="advantages__list">
         <li class="advantages__item">
           <img src="img/icon-user.svg" alt="Иконка пользователя" class="advantages__icon">
@@ -75,9 +80,9 @@
         </li>
       </ul>
     </div>
-    <section class="features container">
-      <img src="img/illustration-2.svg" alt="Иллюстрация" class="features__img">
-      <div class="features__text-block">
+    <section id="features" class="features container">
+      <img src="img/illustration-2.svg" alt="Иллюстрация" class="features__img  wow animate__animated animate__fadeInLeft">
+      <div class="features__text-block  wow animate__animated animate__fadeInRight">
         <h2 class="title features__title">We Provide Many Features You Can Use</h2>
         <p class="text features__text">You can explore the features that we provide with fun and have their own functions each feature.</p>
         <ul class="features__list">
@@ -89,7 +94,7 @@
       </div>
     </section>
     <div class="grey-bg">
-      <section class="plans container">
+      <section id="pricing" class="plans container  wow animate__animated animate__fadeIn">
         <h2 class="title plans__title">Choose Your Plan</h2>
         <p class="text plans__text">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
         <ul class="plans__list">
@@ -135,21 +140,21 @@
         </ul>
       </section>
       <section class="location container">
-        <h2 class="title location__title">Huge Global Network of Fast VPN</h2>
-        <p class="text location__text">See LaslesVPN everywhere to make it easier for you when you move locations.</p>
+        <h2 class="title location__title  wow animate__animated animate__fadeInDown">Huge Global Network of Fast VPN</h2>
+        <p class="text location__text  wow animate__animated animate__fadeInDown">See LaslesVPN everywhere to make it easier for you when you move locations.</p>
         <img src="img/world-map.svg" alt="Распространение по миру" class="location__img">
       </section>
-      <div class="sponsors container">
-        <img src="img/netflix.png" alt="Netflix" class="sponsors__logo">
-        <img src="img/reddit.png" alt="Reddit" class="sponsors__logo">
-        <img src="img/amazon.png" alt="Amazon" class="sponsors__logo">
-        <img src="img/discord.png" alt="Discord" class="sponsors__logo">
-        <img src="img/spotify.png" alt="Spotify" class="sponsors__logo">
+      <div id="testimotionals" class="sponsors container">
+        <img src="img/netflix.png" alt="Netflix" class="sponsors__logo  wow animate__animated animate__fadeIn">
+        <img src="img/reddit.png" alt="Reddit" class="sponsors__logo  wow animate__animated animate__fadeIn">
+        <img src="img/amazon.png" alt="Amazon" class="sponsors__logo  wow animate__animated animate__fadeIn">
+        <img src="img/discord.png" alt="Discord" class="sponsors__logo  wow animate__animated animate__fadeIn">
+        <img src="img/spotify.png" alt="Spotify" class="sponsors__logo  wow animate__animated animate__fadeIn">
       </div>
       <section class="testimotionals container">
-        <h2 class="title testimotionals__title">Trusted by Thousands of Happy Customer</h2>
-        <p class="text testimotionals__text">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
-        <div class="slider">
+        <h2 class="title testimotionals__title  wow animate__animated animate__fadeInDown">Trusted by Thousands of Happy Customer</h2>
+        <p class="text testimotionals__text  wow animate__animated animate__fadeInDown">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+        <div class="slider  wow animate__animated animate__fadeIn">
 
           <div class="slider__item">
             <div class="slider__top-wrapper">
@@ -200,8 +205,8 @@
 
   </main>
 
-  <footer class="footer container">
-    <div class="subscribe">
+  <footer class="footer container  wow animate__animated animate__fadeIn">
+    <div class="subscribe  wow animate__animated animate__fadeInDown">
       <div class="subscribe__text-block">
         <h2 class="title subscribe__title">Subscribe Now for Get Special Features!</h2>
         <p class="text subscribe__text">Let's subscribe with us and find the fun.</p>
