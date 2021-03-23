@@ -30,9 +30,11 @@
     text-decoration: none;
     &:hover {
       text-decoration: underline;
+      transition: 0.3s;
     }
     &:visited {
       text-decoration: underline;
+      transition: 0.3s;
     }
     &:active {
       color: #586894;

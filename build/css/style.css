@@ -577,9 +577,13 @@ th {
   color: #4F5665;
   text-decoration: none; }
   .nav__link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
   .nav__link:visited {
-    text-decoration: underline; }
+    text-decoration: underline;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
   .nav__link:active {
     color: #586894; }
 
@@ -594,11 +598,15 @@ th {
     color: #0B132A;
     text-decoration: none; }
     .login__in:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
     .login__in:visited {
       text-decoration: underline; }
     .login__in:active {
-      color: #586894; }
+      color: #586894;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
   .login__up {
     min-width: calc(59px + 45px * 2);
     padding: 13px 45px;
@@ -610,10 +618,14 @@ th {
     border-radius: 50px; }
     .login__up:hover {
       color: #fff;
-      background-color: #F53855; }
+      background-color: #F53855;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
     .login__up:active {
       color: #fff;
-      background-color: #E43535; }
+      background-color: #E43535;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
 
 .promo {
   display: block;
